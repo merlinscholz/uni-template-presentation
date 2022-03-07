@@ -1,0 +1,101 @@
+\usepackage{cmbright}
+\fontencoding{OT1}\fontfamily{cmbr}\selectfont %to load ot1cmbr.fd
+\DeclareFontShape{OT1}{cmbr}{bx}{n}{% change bx definition
+<->cmbrbx10%
+}{}
+\normalfont
+
+
+
+\usetheme[numbering=fraction,
+	block=fill]{metropolis}
+
+\newcommand{\tu}{TU Dortmund\@\xspace}
+\newcommand{\vgl}{vgl.\@\xspace} 
+\newcommand{\Vgl}{Vgl.\@\xspace}
+\newcommand{\zB}{\mbox{z.\,B.}\xspace}
+\newcommand{\idR}{\mbox{i.\,d.\,R.}\xspace}
+\newcommand{\bzw}{bzw.\@\xspace}
+\newcommand{\bspw}{bspw.\@\xspace}
+\newcommand{\Bspw}{Bspw.\@\xspace}
+\newcommand{\dahe}{\mbox{d.\,h.}\xspace}
+\newcommand{\etc}{etc.\@\xspace}
+\newcommand{\evtl}{evtl.\@\xspace}
+\newcommand{\ggf}{ggf.\@\xspace}
+\newcommand{\bzgl}{bzgl.\@\xspace}
+\newcommand{\gdw}{gdw.\@\xspace}
+\newcommand{\soben}{s.\nolinebreak[4]\hspace{0.125em}\nolinebreak[4]o.\@\xspace}
+\newcommand{\sunten}{s.\nolinebreak[4]\hspace{0.125em}\nolinebreak[4]u.\@\xspace}
+\newcommand{\etal}{et.\nolinebreak[4]\hspace{0.125em}\nolinebreak[4]al.\@\xspace}
+\newcommand{\iA}{i.\nolinebreak[4]\hspace{0.125em}\nolinebreak[4]A.\@\xspace}
+\newcommand{\oA}{o.\nolinebreak[4]\hspace{0.125em}\nolinebreak[4]A.\@\xspace}
+\newcommand{\oAe}{o.\nolinebreak[4]\hspace{0.125em}\nolinebreak[4]Ä.\@\xspace}
+\newcommand{\sa}{s.\nolinebreak[4]\hspace{0.125em}\nolinebreak[4]a.\@\xspace}
+\newcommand{\ua}{u.\nolinebreak[4]\hspace{0.125em}\nolinebreak[4]a.\@\xspace}
+\newcommand{\og}{o.\nolinebreak[4]\hspace{0.125em}\nolinebreak[4]g.\@\xspace}
+\newcommand{\oBdA}{o.\nolinebreak[4]\hspace{0.125em}\nolinebreak[4]B.\nolinebreak[4]\hspace{0.125em}d.\nolinebreak[4]\hspace{0.125em}A.\@\xspace}
+\newcommand{\OBdA}{O.\nolinebreak[4]\hspace{0.125em}\nolinebreak[4]B.\nolinebreak[4]\hspace{0.125em}d.\nolinebreak[4]\hspace{0.125em}A.\@\xspace}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[american,ngerman]{babel}
+\usepackage{amsmath,amsfonts,amssymb,amsthm}
+\usepackage{nameref}
+\usepackage{xcolor}
+\usepackage{xspace}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{caption}
+\usepackage{subcaption}
+\metroset{sectionpage=simple}
+\definecolor{TUGreen}{rgb}{0.517,0.721,0.094}
+\usepackage[backend=bibtex8,bibencoding=utf8,
+	language=auto,
+	style=numeric,
+	sorting=nyt,
+	maxbibnames=10,
+	]{biblatex}
+\usepackage{csquotes}
+\usepackage{hyperref}
+
+\setbeamertemplate{bibliography item}[text]
+\setbeamercolor{background canvas}{bg=white,fg=black}
+\setbeamercolor{frametitle}{bg=white,fg=TUGreen}
+\setbeamercolor{alerted text}{fg=TUGreen}
+\setbeamerfont{bibliography item}{size=\tiny}
+\setbeamerfont{bibliography entry author}{size=\tiny}
+\setbeamerfont{bibliography entry title}{size=\tiny}
+\setbeamerfont{bibliography entry location}{size=\tiny}
+\setbeamerfont{bibliography entry note}{size=\tiny}
+\setbeamercolor{block title}{bg=black!15,fg=black}
+\setbeamercolor{block body}{bg=black!5,fg=black}
+\setbeamercolor{block title example}{bg=green!15,fg=OliveGreen}
+\setbeamercolor{block body example}{bg=green!5,fg=black}
+\setbeamercolor{block title alerted}{bg=red!15,fg=BrickRed}
+\setbeamercolor{block body alerted}{bg=red!5,fg=black}
+\makeatletter
+\renewcommand{\figurename}{Abb.}
+\newcommand*{\currentname}{\@currentlabelname}
+\setbeamertemplate{footline}[frame number]{}
+\setbeamertemplate{frametitle}{%
+	\nointerlineskip%
+	\begin{beamercolorbox}[%
+		wd=\paperwidth,%
+		sep=0pt,%
+		leftskip=\metropolis@frametitle@padding,%
+		rightskip=\metropolis@frametitle@padding,%
+		]{frametitle}%
+		\begin{minipage}[t]{38ex}
+			\metropolis@frametitlestrut@start%
+			\insertframetitle%
+			\nolinebreak%
+			\metropolis@frametitlestrut@end%
+		\end{minipage}
+		\hfill
+		\begin{minipage}[t]{14ex}
+			\vspace{-1.6ex}
+			\includegraphics[height=2.2ex,keepaspectratio]{graphics/tud_logo_rgb}
+		\end{minipage}
+	\end{beamercolorbox}%
+}
+\makeatother
